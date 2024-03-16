@@ -1,0 +1,19 @@
+program id;
+const m:=1, n:=10;
+var x,y;
+procedure addALL();
+    var a,b,c;
+    begin
+        a:=x; b:=y;c:=0;
+        while b>=m do	
+            begin
+                    c:=c+b;
+	    b:=b-1
+            end;
+       if c>0 then
+           write(c)
+end
+begin
+    x:=m; y:=n;
+    call addALL()
+end

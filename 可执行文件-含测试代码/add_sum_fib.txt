@@ -1,0 +1,36 @@
+program fibonacci; 
+var a,b,index,return,i;
+procedure sum(a,b);
+begin
+    index:=a+b;
+    a:=99;
+    b:=99;
+    write(index)
+end;
+procedure fib(x);
+var sum;
+begin
+    sum:=0;
+    if x<2 then
+        return:=x
+    else
+    begin
+        call fib(x-1);
+        sum:=sum+return;
+        call fib(x-2);
+        sum:=sum+return;
+        return:=sum
+    end
+end
+begin
+    i:=1;
+    read(a,b);
+    call sum(a,b);
+    write(a,b);
+    while i<=index do              
+    begin
+        call fib(i);
+        write(return);
+        i:=i+1     
+    end
+end

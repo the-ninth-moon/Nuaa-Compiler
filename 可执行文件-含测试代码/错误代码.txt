@@ -1,0 +1,19 @@
+ progrom Hello HELLO HELLO;
+const a:=1,b:=2 c:=3;
+var d e f g
+procedure (get sad sa ,a);
+begin
+	g:=1
+end
+begin
+	d:=3
+	e=5;
+	f:=6;
+	read(x+y);
+	while m>n do
+		n := m+1
+	if a)b then then
+		e=7
+	else
+		f:=8;
+end

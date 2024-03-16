@@ -1,0 +1,5 @@
+﻿  源.cpp
+C:\Users\woon\Desktop\编译原理\课设\工程文件\Project1\源.cpp(570,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\woon\Desktop\编译原理\课设\工程文件\Project1\源.cpp(1377,10): warning C4101: “index”: 未引用的局部变量
+C:\Users\woon\Desktop\编译原理\课设\工程文件\Project1\源.cpp(1377,7): warning C4101: “l”: 未引用的局部变量
+  Project1.vcxproj -> C:\Users\woon\Desktop\编译原理\课设\工程文件\Debug\Project1.exe

@@ -1,0 +1,52 @@
+program huiwen; 
+var a,b,numSum,lenreturn,i,flag;
+procedure sum(a,b);
+begin
+    numSum:=a+b;
+    a:=99;
+    b:=99;
+    write(numSum)
+end;
+procedure sum2();
+begin
+    write(a+b)
+end;
+procedure isHuiWen(x);
+var left,right,tmp;
+procedure len(x);
+var sum;
+begin
+    sum:=1;
+    while x>0 do
+	begin
+		sum:=sum*10;
+		x:=x/10
+	end;
+	lenreturn:=sum/10
+end
+begin
+    if x<10 then flag:=1 else
+	begin
+		call len(x);
+		right:=x-x/10*10;
+		left:=x/lenreturn;
+		if left<>right then flag:=0 else
+		begin
+		    tmp:=x-left*lenreturn-right;
+			call isHuiWen(tmp/10)
+		end
+	end
+end
+begin
+    i:=1;
+    read(a,b);
+    call sum(a,b);
+    write(a,b);
+	call sum2();
+	while i<=numSum do              
+    begin
+        call isHuiWen(i);
+        if flag=1 then write(i);
+        i:=i+1     
+    end
+end
